@@ -44,7 +44,7 @@
  }
 
  .text-container {
-     margin-top: 30px;
+     margin-top: 50px;
  }
 
  .owl-theme .owl-dots {
@@ -98,7 +98,7 @@
  }
 
  .image-container {
-     flex: 1 1 400px;
+     /* flex: 1 1 400px; */
      text-align: center;
  }
 
@@ -113,7 +113,7 @@
 
  .content-container h2 {
      font-size: 28px;
-     margin-bottom: 10px;
+     margin-bottom: 30px;
      color: #1d252d;
      font-weight: 600;
  }
@@ -193,7 +193,7 @@
  /***********************************************/
 
  .cs-carousel-wrapper {
-     max-width: 1200px;
+     max-width: 100%;
      margin-top: 30px;
  }
 
@@ -238,17 +238,19 @@
      margin-bottom: 10px;
  }
 
+    .compatibleDevices .owl-carousel .owl-stage-outer,
  .cs-carousel-wrapper .owl-carousel .owl-stage-outer {
      padding-top: 15px;
      padding-bottom: 15px;
  }
 
+ .smartphoneContainer .owl-dots,
  .routerContainer .owl-dots,
  .cs-carousel-wrapper .owl-dots {
      text-align: center;
      margin-top: 20px;
  }
-
+ .smartphoneContainer .owl-dot,
  .routerContainer .owl-dot,
  .cs-carousel-wrapper .owl-dot {
      display: inline-block;
@@ -260,6 +262,7 @@
      transition: background 0.3s;
  }
 
+ .smartphoneContainer .owl-dots.active,
  .routerContainer .owl-dots.active,
  .cs-carousel-wrapper .owl-dot.active {
      background: #4f008c !important;
@@ -614,10 +617,11 @@
      right: 50%;
      margin-left: -50vw;
      margin-right: -50vw;
-     background-image: url(https://cws.stc.com.kw/sites/stckw/1602666779067/need_Help_1903x358_en.webp);
+     background-image: url(https://www.stc.com.kw/cdn/images/need_Help_1521x358_ar_cde600fe53.webp);
      background-color: #ff375f;
      padding: 100px 5%;
-     box-sizing: border-box
+     box-sizing: border-box;
+     background-repeat: no-repeat;
  }
 
  .support-content {
@@ -738,7 +742,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 475px;
+  height: 470px;
   box-sizing: border-box;
 }
 
@@ -782,4 +786,27 @@
 
 .owl-carousel.owl-drag .owl-item{
     height: 100% !important;
+}
+
+
+
+@media (max-width: 1400px) {
+  .device-card-more {
+    background-color: #4f008c;
+    color: white;
+    border-radius: 20px;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 430px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 767px) {
+  .device-card-more {
+    height: 400px;
+  }
 }

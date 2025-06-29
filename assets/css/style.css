@@ -238,7 +238,7 @@
      margin-bottom: 10px;
  }
 
-    .compatibleDevices .owl-carousel .owl-stage-outer,
+ .compatibleDevices .owl-carousel .owl-stage-outer,
  .cs-carousel-wrapper .owl-carousel .owl-stage-outer {
      padding-top: 15px;
      padding-bottom: 15px;
@@ -250,6 +250,7 @@
      text-align: center;
      margin-top: 20px;
  }
+
  .smartphoneContainer .owl-dot,
  .routerContainer .owl-dot,
  .cs-carousel-wrapper .owl-dot {
@@ -273,7 +274,7 @@
 
  /* Container Section */
  .trade-in-section {
-     margin-top: 80px;
+     margin-top: 50px;
  }
 
  .trade-in-container {
@@ -300,7 +301,7 @@
 
  .trade-in-left p {
      font-size: 1rem;
-     color: #555;
+     color: #1d252d;
      margin-bottom: 1.5rem;
  }
 
@@ -490,7 +491,8 @@
      font-size: .9rem;
      color: #1d252d
  }
-/* 
+
+ /* 
     .device-card-more {
     background-color: #4f008c;
     border-radius: 15px;
@@ -605,11 +607,11 @@
  /********************************************/
 
  body {
-    overflow-x: hidden !important
+     overflow-x: hidden !important
  }
 
  .support-wrapper {
-    margin-top: 30px;
+     margin-top: 30px;
      background-position: bottom;
      width: 100vw;
      position: relative;
@@ -727,86 +729,183 @@
 
 
  .owl-carousel .item {
-  display: flex;
-  align-items: stretch;
-  height: 100%;
-}
+     display: flex;
+     align-items: stretch;
+     height: 100%;
+ }
 
 
-.device-card-more {
-  background-color: #4f008c;
-  color: white;
-  border-radius: 20px;
-  padding: 100px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 470px;
-  box-sizing: border-box;
-}
+ .device-card-more {
+     background-color: #4f008c;
+     color: white;
+     border-radius: 20px;
+     padding: 100px 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 100%;
+     height: 470px;
+     box-sizing: border-box;
+ }
 
-/* .device-card-more .card-content {
+ /* .device-card-more .card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 } */
 
-.device-card-more h3 {
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 1.4;
-  margin: 0 0 15px;
-}
+ .device-card-more h3 {
+     font-size: 22px;
+     font-weight: bold;
+     line-height: 1.4;
+     margin: 0 0 15px;
+ }
 
-.device-card-more p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ddd;
-  flex-grow: 1;
-}
+ .device-card-more p {
+     font-size: 16px;
+     line-height: 1.5;
+     color: #ddd;
+     flex-grow: 1;
+ }
 
-.card-btn {
-  margin-top: 20px;
-  background-color: #ff4747;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: bold;
-  width: fit-content;
-  margin-top: 20px;
-}
+ .card-btn {
+     margin-top: 20px;
+     background-color: #ff4747;
+     color: white;
+     padding: 12px 24px;
+     border-radius: 8px;
+     text-align: center;
+     text-decoration: none;
+     font-weight: bold;
+     width: fit-content;
+     margin-top: 20px;
+ }
 
-.owl-carousel .item{
-    height: 100% !important;
-}
+ .owl-carousel .item {
+     height: 100% !important;
+ }
 
-.owl-carousel.owl-drag .owl-item{
-    height: 100% !important;
-}
+ .owl-carousel.owl-drag .owl-item {
+     height: 100% !important;
+ }
 
 
 
-@media (max-width: 1400px) {
-  .device-card-more {
-    background-color: #4f008c;
-    color: white;
-    border-radius: 20px;
-    padding: 100px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 430px;
-    box-sizing: border-box;
-  }
-}
+ @media (max-width: 1400px) {
+     .device-card-more {
+         background-color: #4f008c;
+         color: white;
+         border-radius: 20px;
+         padding: 100px 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 100%;
+         height: 430px;
+         box-sizing: border-box;
+     }
+ }
 
-@media (max-width: 767px) {
-  .device-card-more {
-    height: 400px;
-  }
-}
+ @media (max-width: 767px) {
+     .device-card-more {
+         height: 400px;
+     }
+ }
+
+ /******************************/
+
+ .tab-main-container {
+    margin-top: 50px;
+     display: flex;
+     justify-content: start;
+     align-items: flex-start;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+
+ .left-side {
+  flex: 0 0 50%;
+    min-width: 300px;
+ }
+
+ .left-side h2 {
+     font-size: 28px;
+     margin-bottom: 20px;
+ }
+
+
+ .right-side {
+  flex: 0 0 40%;
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin-top: 30px;
+ }
+
+ .right-side a {
+     text-decoration: none;
+ }
+
+ .icon-card {
+     background-color: #fff;
+     border: 1px solid #ccc;
+     border-radius: 12px;
+     padding: 20px;
+     text-align: center;
+     width: 130px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+     transition: transform 0.2s ease;
+ }
+
+ .icon-card:hover {
+     transform: translateY(-4px);
+     border:1.5px solid #4f008c;
+ }
+
+ .icon-card i {
+     font-size: 30px;
+     color: #4f008c;
+     margin-bottom: 10px;
+ }
+
+ .icon-card span {
+     display: block;
+     font-size: 14px;
+     font-weight: 500;
+     color: #1d252d;
+     text-decoration: none;
+ }
+
+ @media (max-width: 768px) {
+
+    .tab-main-container{
+        gap: 0px;
+    }
+
+    .icon-card i{
+        font-size: 24px;
+    }
+     .icon-card {
+         width: 100px;
+         padding: 15px;
+     }
+
+     .tab-main-container {
+         flex-direction: column;
+     }
+
+     .right-side {
+         gap: 10px;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+     }
+
+     .icon-card span {
+         display: block;
+         font-size: 12px;
+         font-weight: 500;
+         color: #1d252d;
+     }
+ }

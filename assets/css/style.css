@@ -1,0 +1,574 @@
+ body {
+     margin: 2% 10% !important;
+     font-family: STCForward-Regular !important;
+ }
+
+ .card-wrapper {
+     display: flex;
+     gap: 20px;
+     padding: 20px;
+     border-radius: 20px;
+     background: #4f008c;
+     max-width: 100%;
+     width: 100%;
+     color: white;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+     flex-wrap: wrap;
+ }
+
+ .carousel-section,
+ .video-section {
+     flex: 1 1 400px;
+     border-radius: 16px;
+     overflow: hidden;
+ }
+
+ .owl-carousel .item img {
+     width: 100%;
+     height: 100%;
+     /* object-fit: cover; */
+     border-radius: 16px;
+ }
+
+ .video-section {
+     position: relative;
+     background-color: #000;
+     aspect-ratio: 16/9;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .video-section iframe {
+     width: 100%;
+     height: 100%;
+     border: none;
+
+ }
+
+ .text-container {
+     margin-top: 30px;
+ }
+
+ .owl-theme .owl-dots {
+     position: absolute;
+     bottom: 15px;
+     width: 100%;
+     text-align: center;
+     z-index: 5;
+ }
+
+ .owl-theme .owl-dots .owl-dot span {
+     width: 10px;
+     height: 10px;
+     margin: 5px 4px;
+     background: rgba(255, 255, 255, 0.6);
+     display: block;
+     border-radius: 50%;
+     transition: all 0.3s;
+ }
+
+ .owl-theme .owl-dots .owl-dot.active span,
+ .owl-theme .owl-dots .owl-dot:hover span {
+     background: #ff375e !important;
+     /* bright yellow for active dot */
+ }
+
+ .section-title,
+ .text-title {
+     font-size: 28px;
+     font-weight: 600;
+ }
+
+ .text-subtitle {
+     font-size: 19px;
+     font-weight: 500;
+ }
+
+ /*************features***********************/
+ .features-section {
+     margin-top: 50px;
+     display: flex;
+     max-width: 100%;
+     width: 100%;
+     /* align-items: center; */
+     flex-wrap: wrap;
+     gap: 40px;
+ }
+
+ .features-grid> :nth-child(5) {
+     grid-column: 1 / -1;
+ }
+
+ .image-container {
+     flex: 1 1 400px;
+     text-align: center;
+ }
+
+ .image-container img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ .content-container {
+     flex: 1 1 500px;
+ }
+
+ .content-container h2 {
+     font-size: 28px;
+     margin-bottom: 10px;
+     color: #1a1a1a;
+     font-weight: 600;
+ }
+ .cs-carousel-wrapper h2 span,
+ .trade-in-section h2 span,
+ .content-container h2 span {
+     color: #8000ff;
+ }
+
+ .content-container p {
+     color: #777;
+     margin-bottom: 30px;
+ }
+
+ .features-grid {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+ }
+
+ .feature-box {
+     background: #fff;
+     border: 1px solid #f0e6ff;
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     text-align: left;
+ }
+
+ .feature-box:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+ }
+
+ .feature-icon {
+     background-color: #f5e6ff;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 10px;
+     font-size: 20px;
+     color: #8000ff;
+     padding: 5px;
+ }
+
+ .feature-title {
+     font-weight: bold;
+     color: #1a1a1a;
+     margin-bottom: 6px;
+ }
+
+ .feature-description {
+     font-size: 14px;
+     color: #666;
+ }
+
+ @media (max-width: 768px) {
+     .features-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .features-section {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .content-container h2 {
+         font-size: 24px;
+     }
+ }
+
+ /***********************************************/
+ 
+.cs-carousel-wrapper {
+  max-width: 1200px;
+  margin-top: 30px;
+}
+.cs-carousel{
+    margin-top: 30px;
+}
+.cs-card {
+    border:1px solid #f3f3f1;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  /* box-shadow: 0 6px 12px rgba(0,0,0,0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cs-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cs-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cs-card-content {
+  padding: 16px;
+}
+
+.cs-card-title {
+  font-size: 18px;
+  margin: 0 0 10px;
+  font-weight: 600  ;
+}
+
+.cs-card-desc {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cs-carousel-wrapper .owl-carousel .owl-stage-outer{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+
+.cs-carousel-wrapper .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cs-carousel-wrapper .owl-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #ccc !important;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.cs-carousel-wrapper .owl-dot.active {
+  background: #4f008c !important;
+}
+
+ /******************scrollable section***********************/
+
+
+ /* Container Section */
+ .trade-in-section {
+     margin-top: 80px;
+ }
+
+ .trade-in-container {
+     display: flex;
+     max-width: 100%;
+     margin: 0 auto;
+     gap: 2rem;
+ }
+
+ /* Left Sticky Column */
+ .trade-in-left {
+     flex: 1;
+     position: sticky;
+     top: 2rem;
+     height: fit-content;
+     align-self: flex-start;
+ }
+
+ .trade-in-left h2 {
+     font-size: 1.8rem;
+     font-weight: bold;
+     margin-bottom: 1rem;
+ }
+
+ .trade-in-left p {
+     font-size: 1rem;
+     color: #555;
+     margin-bottom: 1.5rem;
+ }
+
+ .evaluate-btn {
+     background: #ff2e5f;
+     color: white;
+     padding: 0.6rem 1.2rem;
+     border: none;
+     border-radius: 30px;
+     font-size: 14px;
+     cursor: pointer;
+ }
+
+ .evaluate-btn:hover {
+     background: #e42252;
+ }
+
+ /* Right Cards - Page Scrollable */
+ .trade-in-right {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+     /* Scrollbar hidden but no fixed height or overflow so page scrolls */
+ }
+
+ .trade-in-card {
+     background: white;
+     border: 2px solid #4f008c;
+     border-radius: 15px;
+     padding: 1.5rem;
+     position: relative;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+
+ .trade-in-card:hover {
+     background: white;
+     transform: translateY(-3px);
+     border: 2px solid #ff375e;
+     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Hide scrollbar on all platforms */
+ .trade-in-right {
+     scrollbar-width: none;
+     /* Firefox */
+     -ms-overflow-style: none;
+     /* IE 10+ */
+ }
+
+ .trade-in-right::-webkit-scrollbar {
+     display: none;
+     /* Chrome, Safari */
+ }
+
+ .card-icon {
+     font-size: 24px;
+     margin-bottom: 5px;
+ }
+
+ .trade-in-card ul {
+     padding-left: 1.2rem;
+     color: #444;
+ }
+
+ .trade-in-card p {
+     color: #444;
+ }
+
+ .step-number {
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+     background: #f0f0f0;
+     color: #999;
+     border-radius: 50%;
+     width: 2rem;
+     height: 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+ }
+
+ /* Responsive Layout */
+ @media (max-width: 1024px) {
+     .trade-in-container {
+         flex-direction: column;
+     }
+
+     .trade-in-left {
+         position: relative;
+         top: unset;
+     }
+
+     .trade-in-right {
+         overflow: visible;
+     }
+ }
+
+
+ @media (max-width: 768px) {
+     .card-wrapper {
+         flex-direction: column;
+     }
+ }
+
+
+ .features-section .image-container img {
+     border-radius: 15px;
+ }
+
+ /*************router*****************/
+ 
+ .smartphoneContainer,
+ .routerContainer{
+    margin-top: 30px;
+ }
+ .customCTABHILASH {
+     width: 100% !important;
+     align-content: center !important;
+     padding-left: 30px;
+     padding-right: 30px;
+     font-weight: 500;
+     font-size: 17px;
+     letter-spacing: .5px;
+     line-height: normal;
+     border-radius: 2px;
+     width: 15rem;
+     background-color: #ff375e;
+     color: #fff;
+     height: 55px;
+     border: none;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     margin-top: 15px
+ }
+
+ .compatibleDevices {
+     margin: 2% 2%
+ }
+
+ .compatibleDevices h2{
+    font-size: 28px;
+    font-weight: 600    ;
+ }
+ .device-cards-container {
+     display: flex;
+     gap: 1rem;
+     padding-bottom: 2rem;
+     overflow-x: auto;
+     scroll-snap-type: x mandatory
+ }
+
+ .device-cardWrapper {
+     position: relative;
+     flex: 0 0 300px;
+     background: #fff;
+     border-radius: 15px;
+     scroll-snap-align: start;
+     z-index: 2
+ }
+
+ .device-card {
+     border: 1px solid #dde0e2;
+     border-radius: 15px
+ }
+
+ .device-card:hover {
+     box-shadow: 1px 2px 4px rgba(0, 0, 0, .24)
+ }
+
+ .device-cardWrapper .badge {
+     background-color: #4f008c;
+     border-radius: 5px;
+     color: #fff;
+     font-size: 12px;
+     font-weight: 400;
+     font-weight: 500;
+     height: 44px;
+     letter-spacing: .5px;
+     line-height: 19px;
+     padding: 5px;
+     position: absolute;
+     top: -22px;
+     z-index: -1
+ }
+
+ .device-card .badge.stc-deals {
+     background: #4f008c
+ }
+
+ .device-card .device-image-container {
+     position: relative;
+     text-align: center;
+     background: #fff;
+     border-radius: 15px
+ }
+
+ .device-card img {
+     max-width: 100%;
+     display: block
+ }
+
+ .device-card .content {
+     padding: .75rem
+ }
+
+ .device-card .brand {
+     font-size: .85rem;
+     color: #8e9aa0
+ }
+
+ .device-card .name {
+     font-weight: 500;
+     margin: .25rem 0;
+     color: #1d252d
+ }
+
+ .device-card .price {
+     font-size: .9rem;
+     color: #1d252d
+ }
+
+ .device-card-more {
+     background-color: #4f008c;
+     border-radius: 15px;
+     color: #fff;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: left;
+     text-align: left;
+     max-width: 250px
+ }
+
+ .device-card-more small {
+     font-size: .9rem;
+     color: #d0d0d0;
+     margin-bottom: 10px
+ }
+
+ .device-card-more h2 {
+     font-size: 1.5rem;
+     font-weight: 700;
+     margin: 10px 0
+ }
+
+ .device-card-more p {
+     font-size: 1rem;
+     color: #e0e0e0;
+     margin: 10px 0 20px
+ }
+
+ .device-card-more button {
+     background-color: #ff3e4d;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 8px;
+     font-size: .8rem;
+     cursor: pointer;
+     transition: background-color .3s ease;
+     margin-top: 10px
+ }
+
+ .device-card-more button:hover {
+     background-color: #e0333f
+ }
+
+
+/********************************/
